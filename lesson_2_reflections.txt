@@ -3,3 +3,12 @@ What happens when you initialize a repository? Why do you need to do it?
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 	Staging area is an intermidate stage where the files are ready for commit. Working directory contains all the files including committed, not committed and new ones. Repository is the container of everything.
+
+How do you compare changes between working directory and staging directory?
+	Run the command "git diff" (without any arguments)
+
+How do you compare changes between staging directory and repository?
+	Run the command "git diff --staged"
+
+How to remove unwanted changes from the working directory or staging area?
+	Run the command "git reset --hard" (**** be very careful becuase this is not recoverable!!! ***)
