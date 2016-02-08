@@ -1,0 +1,2 @@
+How do you remove a file from the staging area if that file got added to staging area acidentally?
+	Run the command "git reset <file name>" to remove a file from staging. The file will still be in the repository.
