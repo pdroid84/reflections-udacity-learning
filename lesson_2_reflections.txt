@@ -1,0 +1,5 @@
+What happens when you initialize a repository? Why do you need to do it?
+	To initalize a repository run the command "git init"
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+	Staging area is an intermidate stage where the files are ready for commit. Working directory contains all the files including committed, not committed and new ones. Repository is the container of everything.
