@@ -12,3 +12,53 @@ How do you compare changes between staging directory and repository?
 
 How to remove unwanted changes from the working directory or staging area?
 	Run the command "git reset --hard" (**** be very careful becuase this is not recoverable!!! ***)
+
+How can you use the staging area to make sure you have one commit per logical change?
+	Make changes in the working directory then keep on adding those in staging area. Once the logical end is reached then commit the changes.
+
+How do you check the number of branches?
+	Run the command "git branch" (without any argument)
+
+How do you create a new branch?
+	Run the command "git branch <branch name>".
+
+How do you switch to (checkout) a branch?
+	Run the command "git checkout <branch name>"
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+	When want to do some experimental work or different type of work or more than one person are working on teh fixes.
+
+How do you see commit history in graph representation?
+	Run the command "git log --graph --oneline <master branch> <another branch>"
+
+How do the diagrams help you visualize the branch structure?
+	It helps to understand the path of each branch. Also it helps to identify if there is an commit which can not be reached by a branch.
+
+How to merge "branch1" to master?
+	Checkout master by running the command "git checkout master"
+	Then run the command "git merge branch1" or run the command "git merge master branch1"
+
+How to compare a commit to it's parents?
+	Run the command "git show <commit_id>"
+
+How to restore the files to their state before you started the merge>
+	Run the command "git merge --abort"
+
+How to delete a branch (ideally after merging)?
+	Run the command "git branch - d coins".
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	All changes got combined to master branch. It helps to understand the logical branching and hierarchy of the commits.
+
+How to merge in case of a conflict?
+	Run the merge command as is.
+	Conflict shows the conflicted file.
+	Open the file and resolve the conflict..
+	Run "git status" -> should say "both modified: <file name>"
+	Run "git add" to add to stage area.
+	Run "git status" again.
+	Run "git commit" if all looks okay.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+	TBD
+
